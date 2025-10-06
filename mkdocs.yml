@@ -1,0 +1,43 @@
+site_name: My blog about Traveling
+site_url: https://AlexRos177.github.io/mkdocs_2
+theme:
+  name: material
+  palette:
+    palette:
+
+      # Palette toggle for light mode
+      - scheme: default
+        toggle:
+          icon: material/brightness-7
+          name: Switch to dark mode
+
+      # Palette toggle for dark mode
+      - scheme: slate
+        toggle:
+          icon: material/brightness-4
+          name: Switch to light mode
+    primary: green
+    scheme: slate
+    font:
+      text: Roboto
+    logo: assets/logo.png
+    icon:
+      previous: fontawesome/solid/angle-left
+      next: fontawesome/solid/angle-right
+  plugins:
+    - blog
+  nav:
+    - index.md
+    - Blog:
+        - blog/index.md
+    - rss:
+        match_path: blog/posts/.*
+        date_from_meta:
+          as_creation: date
+        categories:
+          - categories
+          - tags
+    - rss:
+        enabled: !ENV [ CI, false ]
+site_author: Alex Ros
+copyright: Alex Ros,2025
