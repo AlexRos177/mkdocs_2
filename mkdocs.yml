@@ -1,5 +1,5 @@
 site_name: My blog about Traveling
-site_url: https://AlexRos177.github.io/mkdocs_2
+site_url: https://AlexRos177.github.io/mkdocs_2/
 theme:
   name: material
   palette:
