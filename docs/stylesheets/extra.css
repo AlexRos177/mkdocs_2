@@ -1,0 +1,46 @@
+/* docs/stylesheets/extra.css */
+
+/* Full page background with readability overlay */
+body {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+    ), url('../assets/images/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Make content areas transparent */
+.md-main,
+.md-sidebar,
+.md-content__inner,
+.md-typeset {
+    background: transparent !important;
+}
+
+/* Improve text contrast */
+.md-typeset {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+    color: white;
+}
+
+/* Adjust code blocks for better visibility */
+.md-typeset code {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #e6e6e6;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+}

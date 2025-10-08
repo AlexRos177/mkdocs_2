@@ -39,5 +39,7 @@ theme:
           - tags
     - rss:
         enabled: !ENV [ CI, false ]
-site_author: Alex Ros
-copyright: Alex Ros,2025
+extra:
+  generator: false
+
+extra_css: [ stylesheets/extra.css ]
